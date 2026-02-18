@@ -189,8 +189,8 @@ export const resumeConfig: ResumeConfig = {
         },
         
         env: {
-          en: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
-          fr: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
+          en: 'React / Next.js / Tailwind CSS / TypeScript / Node.js / PostgreSQL / Docker / GitHub Actions / AWS / Jest',
+          fr: 'React / Next.js / Tailwind CSS / TypeScript / Node.js / PostgreSQL / Docker / GitHub Actions / AWS / Jest',
         },
       },
     },
@@ -199,7 +199,7 @@ export const resumeConfig: ResumeConfig = {
       company: { en: 'Krialys', fr: 'Krialys' },
       role: { en: 'Fullstack Developer', fr: 'Développeur Fullstack' },
       type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2023 - 2025', fr: '2023 - 2025' },
+      period: { en: ' feb. 2023 - nov. 2025', fr: 'fév. 2023 - nov. 2025' },
       description: {
         en: 'Developed complex business interfaces for a B2B software publisher.',
         fr: 'Développement d’interfaces métiers complexes pour un éditeur de logiciels B2B.',
@@ -229,8 +229,8 @@ export const resumeConfig: ResumeConfig = {
           ],
         },
         env: {
-          en: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
-          fr: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
+          en: 'React / Next.js / TypeScript / Kubernetes / Azure / Playwright',
+          fr: 'React / Next.js / TypeScript / Kubernetes / Azure / Playwright',
         },
       },
     },
@@ -252,7 +252,7 @@ export const resumeConfig: ResumeConfig = {
       company: { en: 'Airbus Defense & Space', fr: 'Airbus Defense & Space' },
       role: { en: 'Compliance Counsel - Export Control', fr: 'Juriste conformité - Export Control' },
       type: { en: 'Fixed term contract', fr: 'CDD' },
-      period: { en: 'août 2020 - août 2022', fr: 'août 2020 - août 2022' },
+      period: { en: 'feb. 2018 - oct. 2020', fr: 'fév. 2018 - oct. 2020' },
       description: {
         en: 'Led the municipality\'s legal affairs: advising departments, securing official acts, managing litigation and public contracts, legal monitoring and compliance.',
         fr: 'Analyse contractuelle et traitement des dossiers d\'exportation de biens sensibles.',
@@ -313,7 +313,7 @@ export const resumeConfig: ResumeConfig = {
       },
       techs: ['React', 'Next.js', 'TailwindCSS','TypeScript', 'MongoDB'],
       url: 'https://www.upflow.website/',
-      github: 'https://github.com/janedoe/weather-app',
+      github: 'https://github.com/Rayan-Kabra/Upflow',
     },
     {
         id: 'project-b',
@@ -324,7 +324,7 @@ export const resumeConfig: ResumeConfig = {
       },
       techs: ['React', 'Vite', 'Node.js', 'Express.js', 'MongoDB', 'Jest', 'React Testing Library', 'WebSocket'],
       url: 'https://ma-gestion-immo.netlify.app/',
-      github: 'https://github.com/janedoe/task-manager',
+      github: 'https://github.com/Rayan-Kabra/Ma-Gestion-Immo',
     },
     {
         id: 'project-c',
@@ -349,8 +349,13 @@ export const resumeConfig: ResumeConfig = {
     },
     {
       school: { en: 'Jean Monnet University - Paris-Saclay Campus', fr: 'Faculté Jean Monnet - Université Paris-Saclay' },
-      degree: { en: 'Bachelor\'s and Master\'s degrees (I and II) in law', fr: 'Licence et Master I et II en droit' },
-      period: '2013 - 2018',
+      degree: { en: ' Second Master degree in Space and telecommunications law', fr: 'Master II en droit spatial et télécommunications' },
+      period: '2017 - 2018',
+    },
+    {
+      school: { en: 'Jean Monnet University - Paris-Saclay Campus', fr: 'Faculté Jean Monnet - Université Paris-Saclay' },
+      degree: { en: 'Bachelor and first Master degree in Public Law', fr: 'Licence et Master I en droit public' },
+      period: '2013 - 2017',
     },
   ],
 
