@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDownIcon } from '@/components/icons'
 import { useBreakpoints } from '@/lib/hooks/useBreakpoints'
@@ -48,14 +48,7 @@ export function ExperienceItem({
   isHighlighted = false,
 }: ExperienceItemProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const [showAllTasks, setShowAllTasks] = useState(false)
   const { isDesktop } = useBreakpoints()
-
-  useEffect(() => {
-    if (!expanded) {
-      setShowAllTasks(false)
-    }
-  }, [expanded])
   const handleClick = () => {
     if (!details) return
     if (isDesktop) {
@@ -143,8 +136,6 @@ export function ExperienceItem({
                   env={details.env}
                   labels={labels}
                   variant="inline"
-                  showAllTasks={showAllTasks}
-                  onShowAllTasks={() => setShowAllTasks(true)}
                 />
               </div>
             </motion.div>

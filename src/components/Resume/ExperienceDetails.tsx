@@ -1,4 +1,5 @@
 import { TechBadge } from './TechBadge'
+import { useState } from 'react'
 
 interface ExperienceDetailsContentProps {
   context: string
@@ -15,8 +16,6 @@ interface ExperienceDetailsContentProps {
     technologies: string
   }
   variant: 'inline' | 'modal'
-  showAllTasks?: boolean
-  onShowAllTasks?: () => void
 }
 
 export function ExperienceDetailsContent({
@@ -28,10 +27,9 @@ export function ExperienceDetailsContent({
   description,
   labels,
   variant,
-  showAllTasks = false,
-  onShowAllTasks,
 }: ExperienceDetailsContentProps) {
   const MAX_INLINE_TASKS = 6
+  const [showAllTasks, setShowAllTasks] = useState(false)
 
   return (
     <div className="space-y-3">
@@ -66,19 +64,13 @@ export function ExperienceDetailsContent({
             ))}
             {variant === 'inline' && !showAllTasks && tasks.length > MAX_INLINE_TASKS && (
               <li>
-                {onShowAllTasks ? (
-                  <button
-                    type="button"
-                    className="text-resume-primary italic hover:underline cursor-pointer"
-                    onClick={onShowAllTasks}
-                  >
-                    +{tasks.length - MAX_INLINE_TASKS} {labels.moreTasks}
-                  </button>
-                ) : (
-                  <span className="text-resume-primary italic">
-                    +{tasks.length - MAX_INLINE_TASKS} {labels.moreTasks}
-                  </span>
-                )}
+                <button
+                  type="button"
+                  className="text-resume-primary italic hover:underline cursor-pointer"
+                  onClick={() => setShowAllTasks(true)}
+                >
+                  +{tasks.length - MAX_INLINE_TASKS} {labels.moreTasks}
+                </button>
               </li>
             )}
           </ul>
