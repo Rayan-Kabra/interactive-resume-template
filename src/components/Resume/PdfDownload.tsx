@@ -42,7 +42,7 @@ export function PdfDownload() {
       <button
         type="button"
         onClick={() => window.print()}
-        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-resume-primary/10 text-resume-primary hover:bg-resume-primary/20 transition-colors text-sm font-medium"
+        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-resume-primary/10 text-resume-primary hover:bg-resume-primary/20 transition-colors text-sm font-medium cursor-pointer"
       >
         <PrintIcon className="w-4 h-4" />
         {printLabel}
