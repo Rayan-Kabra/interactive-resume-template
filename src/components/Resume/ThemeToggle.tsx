@@ -12,7 +12,7 @@ export function ThemeToggle({ label }: ThemeToggleProps) {
   return (
     <button
       onClick={toggle}
-      className="p-2 rounded-full hover:bg-resume-primary/10 transition-colors"
+      className="p-2 rounded-full hover:bg-resume-primary/10 transition-colors cursor-pointer"
       aria-label={label || 'Toggle dark mode'}
     >
       <motion.div
